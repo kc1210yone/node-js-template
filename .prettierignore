@@ -1,0 +1,5 @@
+/.husky/
+/.idea/
+/.vscode/
+/dist/
+/coverage/
