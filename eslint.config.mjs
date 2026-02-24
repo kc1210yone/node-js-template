@@ -68,5 +68,12 @@ export default typescriptEslint.config(
       'unused-imports/no-unused-imports': 'error',
     },
   },
+  {
+    files: ['**/__tests__/**', '**/*.spec.ts', '**/*.test.ts'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-unsafe-argument': 'off',
+    },
+  },
   eslintConfigPrettier,
 );
