@@ -5,12 +5,12 @@
   "license": "UNLICENSED",
   "scripts": {
     "prepare": "command -v husky >/dev/null 2>&1 && husky || true",
+    "dev": "nodemon --exec 'ts-node -P ./tsconfig.build.json -r tsconfig-paths/register -r dotenv/config ./src'",
     "build": "run-s build:{clean,tsc,tsc-alias}",
     "build:clean": "rm -rf ./dist",
     "build:tsc": "tsc -p ./tsconfig.build.json",
     "build:tsc-alias": "tsc-alias -p ./tsconfig.build.json",
     "start": "node -r dotenv/config ./dist",
-    "dev": "nodemon --exec 'ts-node -P ./tsconfig.build.json -r tsconfig-paths/register -r dotenv/config ./src'",
     "test": "run-s test:{typecheck,jest}",
     "test:typecheck": "tsc -p ./tsconfig.build.json --noEmit",
     "test:jest": "jest",
