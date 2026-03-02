@@ -1,3 +1,4 @@
+import { globalIgnores } from 'eslint/config';
 import eslintJs from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginImport from 'eslint-plugin-import';
@@ -6,9 +7,7 @@ import globals from 'globals';
 import typescriptEslint from 'typescript-eslint';
 
 export default typescriptEslint.config(
-  {
-    ignores: ['dist/', 'coverage/'],
-  },
+  globalIgnores(['coverage/', 'dist/']),
   eslintJs.configs.recommended,
   {
     files: ['**/*.ts'],
