@@ -1,5 +1,5 @@
-import { globalIgnores } from 'eslint/config';
 import eslintJs from '@eslint/js';
+import { globalIgnores } from 'eslint/config';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginImport from 'eslint-plugin-import';
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports';
