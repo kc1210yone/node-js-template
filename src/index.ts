@@ -1,5 +1,5 @@
-import { f1 } from './module1';
-import { f2 } from './module2';
+import { f1 } from './module-1';
+import { f2 } from './module-2';
 
 const main = () => {
   f1();

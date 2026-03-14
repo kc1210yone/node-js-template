@@ -1,4 +1,4 @@
-import { f1 } from '@/module1';
+import { f1 } from '@/module-1';
 
 describe('a', () => {
   it('b', () => {
