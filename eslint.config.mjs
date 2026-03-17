@@ -1,12 +1,12 @@
 import eslintJs from '@eslint/js';
-import { globalIgnores } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginImport from 'eslint-plugin-import';
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import typescriptEslint from 'typescript-eslint';
 
-export default typescriptEslint.config(
+export default defineConfig(
   globalIgnores(['coverage/', 'dist/']),
   eslintJs.configs.recommended,
   {
