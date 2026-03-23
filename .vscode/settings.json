@@ -4,5 +4,5 @@
   "editor.codeActionsOnSave": [
     "source.fixAll.eslint"
   ],
-  "jest.jestCommandLine": "npm run test:jest --"
+  "eslint.workingDirectories": [{"mode": "auto"}],
 }

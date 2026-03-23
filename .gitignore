@@ -1,7 +1,17 @@
+# OS
 .DS_Store
+
+# IDE
 .idea/
 *.iml
+
+# Node.js
+build/
+coverage/
+dist/
 node_modules/
-/dist/
+out/
+*.tsbuildinfo
+
+# Others
 .env
-/coverage/

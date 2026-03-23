@@ -10,7 +10,16 @@ export default defineConfig(
   globalIgnores(['coverage/', 'dist/']),
   eslintJs.configs.recommended,
   {
-    files: ['**/*.ts'],
+    files: ['**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.es2024,
+        ...globals.node,
+      },
+    },
+  },
+  {
+    files: ['**/*.{ts,tsx}'],
     extends: [
       ...typescriptEslint.configs.strictTypeChecked,
       ...typescriptEslint.configs.stylisticTypeChecked,
@@ -19,6 +28,7 @@ export default defineConfig(
       globals: {
         ...globals.es2024,
         ...globals.node,
+        ...globals.browser,
       },
       parserOptions: {
         projectService: true,
@@ -45,7 +55,7 @@ export default defineConfig(
           ],
           pathGroups: [
             {
-              pattern: '@/**',
+              pattern: '#src/**',
               group: 'internal',
               position: 'before',
             },

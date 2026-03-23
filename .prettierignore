@@ -1,5 +1,10 @@
-/.husky/
-/.idea/
-/.vscode/
-/dist/
-/coverage/
+# IDE
+.idea/
+.vscode/
+
+# Node.js
+.husky/
+build/
+coverage/
+dist/
+out/

@@ -1,5 +1,0 @@
-// For ESLint and IDE
-{
-  "extends": "./tsconfig.base.json",
-  "include": ["./src/**/*.ts"]
-}
