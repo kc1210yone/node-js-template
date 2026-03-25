@@ -4,16 +4,13 @@
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
-  "exports": {
-    "./*": "./dist/*"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "run-s test:{typecheck,vitest}",
     "test:typecheck": "tsc --noEmit",
-    "test:vitest": ":",
+    "test:vitest": "vitest run",
     "lint": "run-s lint:{eslint,prettier}",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check --ignore-path ../../.prettierignore .",
@@ -24,6 +21,8 @@
   "dependencies": {
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "tailwind-merge": "3.5.0",
+    "tailwind-variants": "3.2.2",
     "tiny-invariant": "1.3.3"
   },
   "devDependencies": {
@@ -36,6 +35,7 @@
     "@vitejs/plugin-react": "6.0.1",
     "babel-plugin-react-compiler": "1.0.0",
     "tailwindcss": "4.2.2",
-    "vite": "8.0.1"
+    "vite": "8.0.1",
+    "vitest": "4.1.0"
   }
 }

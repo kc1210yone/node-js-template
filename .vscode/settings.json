@@ -4,5 +4,10 @@
   "editor.codeActionsOnSave": [
     "source.fixAll.eslint"
   ],
-  "eslint.workingDirectories": [{"mode": "auto"}],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "jest.enable": false,
 }
