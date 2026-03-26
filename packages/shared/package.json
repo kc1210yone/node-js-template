@@ -11,17 +11,18 @@
     "./*": "./dist/*"
   },
   "scripts": {
-    "build": "run-s build:{clean,tsc}",
-    "build:clean": "rm -rf ./dist",
-    "build:tsc": "tsc",
+    "build": "tsc -b",
     "test": "run-s test:{typecheck,vitest}",
     "test:typecheck": "tsc --noEmit",
-    "test:vitest": ":",
+    "test:vitest": "vitest run",
     "lint": "run-s lint:{eslint,prettier}",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check --ignore-path ../../.prettierignore .",
     "fix": "run-s fix:{eslint,prettier}",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier --write --ignore-path ../../.prettierignore ."
+  },
+  "devDependencies": {
+    "vitest": "4.1.0"
   }
 }

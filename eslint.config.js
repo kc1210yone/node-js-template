@@ -7,7 +7,7 @@ import globals from 'globals';
 import typescriptEslint from 'typescript-eslint';
 
 export default defineConfig(
-  globalIgnores(['coverage/', 'dist/']),
+  globalIgnores(['**/coverage/', '**/dist/']),
   eslintJs.configs.recommended,
   {
     files: ['**/*.js'],
@@ -78,7 +78,7 @@ export default defineConfig(
     },
   },
   {
-    files: ['**/__tests__/**', '**/*.spec.ts', '**/*.test.ts'],
+    files: ['**/__tests__/**', '**/*.{spec,test}.{ts,tsx}'],
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unsafe-argument': 'off',
