@@ -7,7 +7,17 @@ import globals from 'globals';
 import typescriptEslint from 'typescript-eslint';
 
 export default defineConfig(
-  globalIgnores(['**/coverage/', '**/dist/']),
+  globalIgnores([
+    '**/.husky/',
+    '**/.idea/',
+    '**/.next/',
+    '**/.vscode/',
+    '**/build/',
+    '**/coverage/',
+    '**/dist/',
+    '**/out/',
+    '**/next-env.d.ts',
+  ]),
   eslintJs.configs.recommended,
   {
     files: ['**/*.js'],

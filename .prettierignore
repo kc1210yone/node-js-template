@@ -4,7 +4,9 @@
 
 # Node.js
 .husky/
+.next/
 build/
 coverage/
 dist/
 out/
+next-env.d.ts
