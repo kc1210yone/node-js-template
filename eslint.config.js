@@ -20,7 +20,7 @@ export default defineConfig(
   ]),
   eslintJs.configs.recommended,
   {
-    files: ['**/*.js'],
+    files: ['**/*.{js,mjs,cjs}'],
     languageOptions: {
       globals: {
         ...globals.es2024,
