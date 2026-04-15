@@ -7,14 +7,15 @@ import rootConfig from '../../eslint.config.ts';
 export default defineConfig(
   rootConfig,
   {
-    ...eslintPluginReact.configs.flat.recommended,
+    ...eslintPluginReact.configs.flat['recommended'],
     settings: {
       react: {
         version: 'detect',
       },
     },
     rules: {
-      ...eslintPluginReact.configs.flat.recommended.rules,
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      ...eslintPluginReact.configs.flat['recommended']!.rules,
       'react/react-in-jsx-scope': 'off',
     },
   },
