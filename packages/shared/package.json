@@ -5,10 +5,10 @@
   "license": "UNLICENSED",
   "type": "module",
   "imports": {
-    "#src/*": "./dist/*"
+    "#src/*": "./dist/src/*"
   },
   "exports": {
-    "./*": "./dist/*"
+    "./*": "./dist/src/*"
   },
   "scripts": {
     "build": "tsc -b",

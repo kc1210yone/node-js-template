@@ -29,7 +29,7 @@ export default defineConfig(
     },
   },
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.{ts,mts,cts,tsx}'],
     extends: [
       ...typescriptEslint.configs.strictTypeChecked,
       ...typescriptEslint.configs.stylisticTypeChecked,

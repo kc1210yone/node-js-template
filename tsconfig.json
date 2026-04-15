@@ -2,13 +2,9 @@
   "compilerOptions": {
     "target": "es2024",
     "module": "nodenext",
-    "paths": {
-      "#src/*": ["./src/*"]
-    },
     "outDir": "./dist",
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
 
     // recommended
     "jsx": "react-jsx",
@@ -28,6 +24,5 @@
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true
-  },
-  "include": ["./src"]
+  }
 }
