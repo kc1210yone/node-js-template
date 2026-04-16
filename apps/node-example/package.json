@@ -5,12 +5,12 @@
   "license": "UNLICENSED",
   "type": "module",
   "imports": {
-    "#src/*": "./dist/*"
+    "#src/*": "./dist/src/*"
   },
   "scripts": {
     "dev": "tsx watch ./src/index.ts",
     "build": "tsc -b",
-    "start": "node ./dist/index.js",
+    "start": "node ./dist/src/index.js",
     "test": "run-s test:{typecheck,vitest}",
     "test:typecheck": "tsc --noEmit",
     "test:vitest": "vitest run",

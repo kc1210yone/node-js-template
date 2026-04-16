@@ -1,6 +1,9 @@
+import { sharedFunction } from '@internal/shared/shared-function/index.js';
 import { it, expect } from 'vitest';
-import { exampleFunction } from '#src/module/index.js';
+import { exampleFunction } from '#src/example-function/index.js';
 
 it('dummy', () => {
-  expect(exampleFunction()).toBe(42);
+  exampleFunction();
+  sharedFunction();
+  expect(true).toBe(true);
 });

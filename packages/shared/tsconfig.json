@@ -2,8 +2,9 @@
   "compilerOptions": {
     "target": "es2024",
     "module": "nodenext",
+    "rootDir": ".",
     "paths": {
-      "#src/*": ["./src/*"]
+      "#shared/*": ["./src/*"]
     },
     "outDir": "./dist",
     "composite": true,

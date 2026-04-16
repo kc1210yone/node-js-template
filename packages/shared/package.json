@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "type": "module",
   "imports": {
-    "#src/*": "./dist/src/*"
+    "#shared/*": "./dist/src/*"
   },
   "exports": {
     "./*": "./dist/src/*"

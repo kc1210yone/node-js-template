@@ -1,6 +1,6 @@
 import 'dotenv/config';
-import { sharedFunction } from '@internal/shared/module/index.js';
-import { exampleFunction } from '#src/module/index.js';
+import { sharedFunction } from '@internal/shared/shared-function/index.js';
+import { exampleFunction } from '#src/example-function/index.js';
 
-console.log(exampleFunction());
-console.log(sharedFunction());
+exampleFunction();
+sharedFunction();

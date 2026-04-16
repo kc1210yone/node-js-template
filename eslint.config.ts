@@ -49,6 +49,9 @@ export default defineConfig(
     plugins: {
       import: eslintPluginImport,
     },
+    settings: {
+      'import/internal-regex': '^#',
+    },
     rules: {
       'import/order': [
         'error',
@@ -62,13 +65,6 @@ export default defineConfig(
             'index',
             'object',
             'type',
-          ],
-          pathGroups: [
-            {
-              pattern: '#src/**',
-              group: 'internal',
-              position: 'before',
-            },
           ],
           'newlines-between': 'never',
           alphabetize: {
