@@ -49,9 +49,6 @@ export default defineConfig(
     plugins: {
       import: eslintPluginImport,
     },
-    settings: {
-      'import/internal-regex': '^#',
-    },
     rules: {
       'import/order': [
         'error',
