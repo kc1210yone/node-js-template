@@ -14,7 +14,7 @@
     "noEmit": true,
     "erasableSyntaxOnly": true,
 
-    // recommended
+    // Recommended.
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
@@ -22,7 +22,7 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
 
-    // type checking
+    // Type checking.
     "strict": true,
     "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
