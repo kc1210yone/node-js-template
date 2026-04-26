@@ -1,6 +1,6 @@
 import type { Configuration } from 'lint-staged';
 
-const a = {
+export default {
   '!{apps,packages}/**': [
     'eslint --fix --no-warn-ignored',
     'prettier --write --ignore-unknown',
@@ -20,6 +20,3 @@ const a = {
     ]),
   ),
 } satisfies Configuration;
-console.log(a);
-
-export default a;
