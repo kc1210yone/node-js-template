@@ -28,5 +28,5 @@
     "noUnusedParameters": true
   },
   "references": [{ "path": "../../packages/shared" }],
-  "include": ["./src"]
+  "include": ["src"]
 }
