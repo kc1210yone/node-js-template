@@ -4,5 +4,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
-  "eslint.workingDirectories": [{"mode": "auto"}]
+  "eslint.workingDirectories": [{"mode": "auto"}],
+  "js/ts.tsdk.path": "./node_modules/typescript/lib"
 }
