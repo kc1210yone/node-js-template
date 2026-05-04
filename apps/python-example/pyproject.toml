@@ -6,8 +6,8 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "mypy>=1.19.1",
-    "ruff>=0.15.4",
+  "mypy>=1.19.1",
+  "ruff>=0.15.4",
 ]
 
 [tool.ruff]
@@ -17,9 +17,9 @@ line-length = 119
 [tool.ruff.lint]
 select = ["ALL"]
 ignore = [
-    "D203",
-    "D213",
-    "COM812",
+  "D203",
+  "D213",
+  "COM812",
 ]
 
 [tool.mypy]
