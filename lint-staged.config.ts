@@ -12,7 +12,7 @@ export default {
       'apps/vite-example',
       'packages/shared',
     ].map((workspace) => [
-      `${workspace}/**/*`,
+      `${workspace}/**`,
       [
         `npx -w ./${workspace} eslint --fix --no-warn-ignored`,
         `npx -w ./${workspace} prettier --write --ignore-path ../../.prettierignore --ignore-unknown`,
