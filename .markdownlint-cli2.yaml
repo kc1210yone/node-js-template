@@ -1,0 +1,7 @@
+globs:
+  - "**/*.md"
+ignores:
+  - node_modules/**
+config:
+  line-length: false
+  no-bare-urls: false
