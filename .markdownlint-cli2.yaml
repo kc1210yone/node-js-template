@@ -5,3 +5,5 @@ ignores:
 config:
   line-length: false
   no-bare-urls: false
+  no-duplicate-heading:
+    siblings_only: true
