@@ -1,4 +1,11 @@
+import { globSync } from 'node:fs';
+import { dirname, sep } from 'node:path';
 import type { Configuration } from 'lint-staged';
+
+/** package.json があるワークスペースの相対パスを集める。 */
+const workspaces = globSync('{apps,packages}/*/package.json', {
+  cwd: import.meta.dirname,
+}).map((manifest) => dirname(manifest).split(sep).join('/'));
 
 export default {
   '!{apps,packages}/**': [
@@ -6,12 +13,7 @@ export default {
     'prettier --write --ignore-unknown',
   ],
   ...Object.fromEntries(
-    [
-      'apps/next-js-example',
-      'apps/node-example',
-      'apps/vite-example',
-      'packages/shared',
-    ].map((workspace) => [
+    workspaces.map((workspace) => [
       `${workspace}/**`,
       [
         `npx -w ./${workspace} eslint --fix --no-warn-ignored`,
