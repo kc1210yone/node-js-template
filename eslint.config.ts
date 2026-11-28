@@ -15,8 +15,8 @@ export default defineConfig(
     '**/build/',
     '**/coverage/',
     '**/dist/',
-    '**/out/',
     '**/next-env.d.ts',
+    '**/out/',
   ]),
   eslintJs.configs.recommended,
   {
