@@ -11,8 +11,6 @@
     "lint:fix": "npm run lint:fix --workspaces"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.5.0",
-    "@commitlint/config-conventional": "20.5.0",
     "@eslint/js": "9.39.4",
     "@next/eslint-plugin-next": "16.2.1",
     "@types/node": "24.10.13",
