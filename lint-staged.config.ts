@@ -1,11 +1,13 @@
-import { globSync } from 'node:fs';
+import { glob } from 'node:fs/promises';
 import { dirname, sep } from 'node:path';
 import type { Configuration } from 'lint-staged';
 
-/** package.json があるワークスペースの相対パスを集める。 */
-const workspaces = globSync('{apps,packages}/*/package.json', {
+const workspaces: string[] = [];
+for await (const manifest of glob('{apps,packages}/*/package.json', {
   cwd: import.meta.dirname,
-}).map((manifest) => dirname(manifest).split(sep).join('/'));
+})) {
+  workspaces.push(dirname(manifest).split(sep).join('/'));
+}
 
 export default {
   '!{apps,packages}/**': [
