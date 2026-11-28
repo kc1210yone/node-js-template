@@ -2,4 +2,4 @@
 
 ## ワークスペースのコマンド
 
-ワークスペースのコマンドは、リポジトリルートから `npm run <script-name> -w <workspace-name>` で実行する。
+ワークスペースのコマンドは、リポジトリルートから`npm run <script-name> -w <workspace-name>`で実行する。
