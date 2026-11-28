@@ -1,7 +1,7 @@
-import { it, expect } from 'vitest';
+import { expect, test } from 'vitest';
 import { sharedFunction } from '#shared/shared-function/index.js';
 
-it('dummy', () => {
+test('dummy', () => {
   sharedFunction();
   expect(true).toBe(true);
 });
